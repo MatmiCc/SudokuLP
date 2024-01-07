@@ -60,8 +60,6 @@ prob += choices["1"]["5"]["9"] == 1, ""
 prob += choices["6"]["6"]["9"] == 1, ""
 prob += choices["5"]["8"]["9"] == 1, ""
 
-prob.writeLP("Sudoku.lp")  #printing solved sudoku to Sudoku.lp
-
 prob.solve()
 
 # print status(Optimal, Infeasible, Unbounded)
